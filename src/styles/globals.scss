@@ -1,0 +1,1003 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-ExtraBold.eot');
+  src: local('Lexend Exa ExtraBold'), local('LexendExa-ExtraBold'),
+      url('./fonts/LexendExa-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-ExtraBold.woff2') format('woff2'),
+      url('./fonts/LexendExa-ExtraBold.woff') format('woff'),
+      url('./fonts/LexendExa-ExtraBold.ttf') format('truetype'),
+      url('./fonts/LexendExa-ExtraBold.svg#LexendExa-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-Bold.eot');
+  src: local('Lexend Exa Bold'), local('LexendExa-Bold'),
+      url('./fonts/LexendExa-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-Bold.woff2') format('woff2'),
+      url('./fonts/LexendExa-Bold.woff') format('woff'),
+      url('./fonts/LexendExa-Bold.ttf') format('truetype'),
+      url('./fonts/LexendExa-Bold.svg#LexendExa-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-Black.eot');
+  src: local('Lexend Exa Black'), local('LexendExa-Black'),
+      url('./fonts/LexendExa-Black.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-Black.woff2') format('woff2'),
+      url('./fonts/LexendExa-Black.woff') format('woff'),
+      url('./fonts/LexendExa-Black.ttf') format('truetype'),
+      url('./fonts/LexendExa-Black.svg#LexendExa-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-ExtraLight.eot');
+  src: local('Lexend Exa ExtraLight'), local('LexendExa-ExtraLight'),
+      url('./fonts/LexendExa-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-ExtraLight.woff2') format('woff2'),
+      url('./fonts/LexendExa-ExtraLight.woff') format('woff'),
+      url('./fonts/LexendExa-ExtraLight.ttf') format('truetype'),
+      url('./fonts/LexendExa-ExtraLight.svg#LexendExa-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-Regular.eot');
+  src: local('Lexend Exa Regular'), local('LexendExa-Regular'),
+      url('./fonts/LexendExa-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-Regular.woff2') format('woff2'),
+      url('./fonts/LexendExa-Regular.woff') format('woff'),
+      url('./fonts/LexendExa-Regular.ttf') format('truetype'),
+      url('./fonts/LexendExa-Regular.svg#LexendExa-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-Medium.eot');
+  src: local('Lexend Exa Medium'), local('LexendExa-Medium'),
+      url('./fonts/LexendExa-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-Medium.woff2') format('woff2'),
+      url('./fonts/LexendExa-Medium.woff') format('woff'),
+      url('./fonts/LexendExa-Medium.ttf') format('truetype'),
+      url('./fonts/LexendExa-Medium.svg#LexendExa-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-Light.eot');
+  src: local('Lexend Exa Light'), local('LexendExa-Light'),
+      url('./fonts/LexendExa-Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-Light.woff2') format('woff2'),
+      url('./fonts/LexendExa-Light.woff') format('woff'),
+      url('./fonts/LexendExa-Light.ttf') format('truetype'),
+      url('./fonts/LexendExa-Light.svg#LexendExa-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-SemiBold.eot');
+  src: local('Lexend Exa SemiBold'), local('LexendExa-SemiBold'),
+      url('./fonts/LexendExa-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-SemiBold.woff2') format('woff2'),
+      url('./fonts/LexendExa-SemiBold.woff') format('woff'),
+      url('./fonts/LexendExa-SemiBold.ttf') format('truetype'),
+      url('./fonts/LexendExa-SemiBold.svg#LexendExa-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Exa';
+  src: url('./fonts/LexendExa-Thin.eot');
+  src: local('Lexend Exa Thin'), local('LexendExa-Thin'),
+      url('./fonts/LexendExa-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LexendExa-Thin.woff2') format('woff2'),
+      url('./fonts/LexendExa-Thin.woff') format('woff'),
+      url('./fonts/LexendExa-Thin.ttf') format('truetype'),
+      url('./fonts/LexendExa-Thin.svg#LexendExa-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  zoom: 0.9;
+  overflow-x: hidden;
+  font-family: 'Lexend Exa' !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.head_bx{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  max-width: 1700px;
+}
+.head_btn_box{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.70);
+  backdrop-filter: blur(12px);
+  height: 60px;
+  max-width: 280px;
+  width: 100%;
+  position: relative;
+  button{
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    font-family: "Lexend Exa";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: transparent !important;
+    border: none;
+    border-radius: 0;
+    opacity: 0.5;
+    img{
+      margin-left: 5px;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -1px;
+    border: 1px solid transparent;
+    background: linear-gradient(97deg, #948695, rgba(52, 3, 248, 0), #948695) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 15px;
+    height: 30px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    stroke-width: 1px;
+    // stroke: rgba(255, 255, 255, 0.00);
+  }
+}
+.one_sec_min{
+  position: relative;
+  .sec_one_contin{
+    z-index: 1;
+    top: 0;
+    max-width: 1750px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+.sec_01_p_btn_img{
+  p{
+    color: #FFF;
+    font-family: "Lexend Exa";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 36px;
+    max-width: 1035px;
+  }
+  .sec_bg_box{
+    overflow: hidden;
+
+    img{
+      margin-left: -6%;
+    }
+  }
+}
+
+button.btn_bg, a.btn_bg{
+  border: none;    
+  outline: none;
+  background: transparent !important;
+  position: relative;
+  height: 80px;
+  max-width: 370px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img{
+    pointer-events: none;
+  }
+  &:hover{
+    span{
+      color: #f6203c;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: radial-gradient(100.54% 100.54% at 50.13% 0%, #F1FF4D 0%, #81AF00 100%);
+    filter: blur(22px);
+  }
+  .btn_bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  span{
+    z-index: 1;
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: center;
+    color: #1A2200;
+    font-family: "Lexend Exa";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+      img{
+        margin-left: 9px;
+      }
+    &:hover{
+      color: #f6203c;
+    }
+  }
+}
+.live_casino_bx{
+  background: url(../images/live_casino_bg.png) no-repeat 0;
+  background-size: cover;
+  width: 100%;
+  margin-top: -177px;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.sec_one_bg_mobo{
+  display: none;
+}
+.logo_mobo{
+  display: none;
+}
+.sec_one_bg_box{
+  background: url(../images/sec_one_bg.png) no-repeat right 0;
+  background-size: cover;
+  min-height: 1145px;
+  position: relative;
+  z-index: 1;
+}
+.live_casino_p_btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  p{
+    color: #FFF;
+    font-family: "Lexend Mega";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 64px */
+  }
+}
+button.see_all_btn_ic, a.see_all_btn_ic{
+  color: #FFF;
+  font-family: "Lexend Exa";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(12px);
+  max-width: 208px;
+  min-height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+  position: relative;
+  img{
+    margin-left: 6px;
+  }
+  &:hover{
+    background: rgba(255, 255, 255, 0.40);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -1px;
+    border: 1px solid transparent;
+    background: linear-gradient(97deg, #948695, rgba(52, 3, 248, 0), #948695) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+}
+.casino_img_01{
+  width: 100%;
+}
+.d_non_see_allbtn_v2_mobo{
+  display: none !important;
+}
+.top_game_bg{
+  background: url(../images/top_game_bg.png) no-repeat 0;
+  background-size: cover;
+  width: 100%;
+  min-height: 1300px;
+  margin-top: -200px;
+  padding-top: 240px;
+  position: relative;
+}
+.top_game_conti{
+  max-width: 1076px;
+}
+.accept_payments_ph{
+  h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 64px */
+    text-transform: uppercase;
+  }
+  p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Lexend Exa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+.accept_payments_bxmin{
+  background: url(../images/payment_bg.png) no-repeat center;
+  background-size: cover;
+  padding-top: 280px;
+  margin-top: -250px;
+  padding-bottom: 250px;
+}
+.payments_gris_img_01{
+  mix-blend-mode: luminosity;
+}
+@media screen and (max-width: 991px) {
+  .top_game_bg {
+    margin-top: -360px;
+    padding-top: 380px;
+    padding-bottom: 400px;
+  }
+  .live_casino_bx{
+    padding-bottom: 350px;
+  }
+  .accept_payments_bxmin {
+    margin-top: -410px;
+  }
+  .accept_payments_ph p{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .d_non_see_allbtn_v2_mobo{
+    display: flex !important;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .d_non_see_allbtn{
+    display: none !important;
+  }
+  .sec_one_bg_box{
+    min-height: 1175px;
+  }
+  .head_btn_box{
+    max-width: 350px;
+  }
+  .logo_mobo{
+    min-width: 100px;
+    margin-right: 30px;
+    margin-left: 10px;
+    min-height: 32px;
+  }
+  .logo{
+    display: none;
+  }
+  .logo_mobo{
+    display: block;
+  }
+  .sec_one_bg{
+    display: none;
+  }
+  .sec_one_bg_mobo{
+    display: block;
+    width: 100%;  
+  }
+  .head_btn_box::after{
+    right: 30%;
+  }
+  .sec_01_p_btn_img p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 52px;
+    max-width: 1035px;
+  }
+  button.btn_bg span img {
+    height: 18px;
+    width: 18px;
+  }
+  .head_bx {
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .live_casino_p_btn p{
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  .d_non_grid{
+    display: none;
+  }
+  .accept_payments_ph h2{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .logo_mobo {
+    min-width: 60px;
+    margin-right: 30px;
+    margin-left: 6px;
+    min-height: 0px;
+  }
+  .head_btn_box::after {
+    right: 34%;
+  }
+  .sec_one_bg_box{
+    background: url(../images/sec_one_bg_mobo.png) no-repeat right 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    min-height: 1353px;
+
+  }
+}
+.faq_min{
+  background: #b70ce163;
+  padding: 200px 0;
+  padding-bottom: 100px;
+}
+.faq_had_contin{
+  span{
+    color: #39F329;
+    text-align: center;
+    font-family: "Lexend Exa";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h4{
+    color: #FFF;
+    text-align: center;
+    font-family: "Lexend Exa";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin: 0 15px;
+  }
+  p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Lexend Exa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-bottom: 50px;
+  }
+}
+.faq_grid_box{
+  max-width: 460px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-right: 10px;
+  h3{
+    color: #FFF;
+    font-family: "Lexend Exa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin:20px 0;
+  }
+  p{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Lexend Exa";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+  }
+}
+.still_qution_bx{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+  gap: 0 20px;
+  h2{
+    color: #FFF;
+    font-family: "Lexend Exa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  p{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Lexend Exa";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+    max-width: 627px;
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+.footer_min{
+  background: black;
+}
+.footer_ic_bx{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fot_list_bx_min{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.foot_comny_link{
+  h2{
+    color: #FFF;
+    font-family: "Lexend Exa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .compny_link_bx{
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    a{
+      color: #FFF;
+      font-family: "Lexend Exa";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 22.4px */
+      opacity: 0.5;
+      transition: all 0.2s ease-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+.data_user_bx{
+  background: url(../images/data_user_bg.png) no-repeat 0;
+  background-size: cover;
+  min-height: 1040px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -180px;
+  position: relative;
+}
+.game_user_data_bx{
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.90) 100%);
+  backdrop-filter: blur(12px);
+  max-width: 536px;
+  min-height: 231px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -1px;
+    border: 1px solid transparent;
+    background: linear-gradient(97deg, #948695, rgba(52, 3, 248, 0), #948695) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  h2{
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
+.game_user_data_span_img{
+  display: flex;
+  align-items: center;
+  p{
+    color: #FF5400;
+    font-family: "Lexend Exa";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    span{
+      color: #FF5400;
+      font-family: "Lexend Exa";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      position: absolute;
+    }
+  }
+  .game_user_data_ic_01_v2{
+    opacity: 0.5;
+  }
+}
+.data_flex_bx_min{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.data_flex_bx{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  max-width: 536px;
+}
+.data_flex_bx{
+  margin-left: 30px;
+}
+.game_user_data_bx{
+  margin-top: 30px;
+}
+.data_flex_bx_v2{
+  margin-top: -100px;
+}
+.game_user_data_bx_a3{
+  margin-right: 30px;
+}
+.faq_min{
+  background: url(../images/faq_bg.png) no-repeat center;
+  background-size: cover;
+  padding-top: 310px;
+  margin-top: -230px;
+}
+
+button.btn_bg_v2::before, a.btn_bg_v2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #0071B1 0%, #00E0FF 100%);
+  filter: blur(40px);
+  
+}
+button.btn_bg_v2, a.btn_bg_v2{
+  span{
+    img{
+      display: none;
+    }
+  }
+  &:hover{
+    span{
+      color: #421840 !important;
+    }
+  }
+}
+.faq_had_contin{
+  .slider_bx{
+    .slick-arrow.slick-prev{
+      width: 55px !important;
+      height: 55px !important;
+      border-radius: 50%; 
+      background: rgb(245, 12, 12) !important;
+    }
+  }  
+}
+.slider_bx{
+  .slick-dots{
+    display: none !important;
+  }
+  .slick-dots li button:before{
+    background: rgba(217, 217, 217, 0.20);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    color: transparent;
+  }
+  .slick-dots li.slick-active button:before{
+    outline: 4px solid rgba(217, 217, 217, 0.20);
+    background: #fff;
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    top: 3px;
+  }
+  .slick-prev{
+    font-size: 60px;
+    background: url(../images/slid_right.png) no-repeat center !important;
+    background-size: contain;
+    height: 55px;
+    width: 55px;
+    button{
+      background: url(../images/slid_right.png) no-repeat center !important;
+    }
+  }
+  .slick-next{
+    background: url(../images/sid_lft_img.png) no-repeat center !important;
+    background-size: contain;
+    height: 55px;
+    width: 55px;
+  }
+  .slick-track:before, .slick-track:after{
+    display: none !important;
+    opacity: 0;
+  }
+  .slick-prev:before, .slick-next:before{
+    font-size: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .game_user_data_span_img p {
+    font-size: 84px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .game_user_data_ic_01{
+    height: 64px;
+    width: 64px;
+  }
+  .game_user_data_span_img p{
+    font-size: 58px;
+  }
+  .game_user_data_bx h2 {
+    font-size: 20px;
+  }
+  .game_user_data_bx {
+    min-height: 165px;
+  }
+  .data_flex_bx_v2{
+    margin: 0;
+  }
+  .game_user_data_bx_a3 {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .slider_bx .slick-prev {
+   display: none !important;
+  }
+  .slider_bx .slick-next {
+   display: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  button.btn_bg_v2, a.btn_bg_v2{
+    span{
+      img{
+        display: block;
+        filter: invert(11%) sepia(5%) saturate(7076%) hue-rotate(193deg) brightness(97%) contrast(117%) !important;
+      }
+    }
+  }
+  .slider_bx{
+    .slick-dots{
+      display: block !important;
+    }
+  }
+  .faq_min{
+    padding-bottom: 100px;
+  }
+  .faq_had_contin h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .faq_had_contin p{
+    font-size: 16px;
+  }
+  .faq_grid_box {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .still_qution_bx {
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px 0;
+  }
+  .slider_bx .slick-prev {
+    left: 40px;
+    top: auto;
+    bottom: -70px;
+  }
+  .slider_bx .slick-next {
+    right: 40px;
+    top: auto;
+    bottom: -70px;
+  }
+}
+@media screen and (max-width: 767px) {
+
+ 
+  .data_flex_bx_min {
+    flex-direction: column;
+  }
+  .data_flex_bx {
+    margin-left: 0px;
+  }
+  .data_user_bx{
+    background: url(../images/data_user_bg_mobo.png) no-repeat 0 top;
+    background-size: cover;
+    width: 100%;
+    min-height: 1700px;
+    padding-top: 210px;
+    align-items: inherit;
+    padding-top: 331px;
+    margin-top: -260px;
+  }
+  .footer_ic_bx{
+    flex-direction: column;
+    gap: 30px 0;
+  }
+  .foot_comny_link .compny_link_bx {
+    gap: 19px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .foot_comny_link h2 {
+    margin-bottom: 30px;
+    align-items: flex-start;
+    display: flex;
+    text-align: start;
+  }
+  .fot_list_bx_min {
+    align-items: baseline;
+    margin-top: 130px;
+  }
+  p.disclaer_p{
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider_bx .slick-prev {
+    left: 20px;
+    top: auto;
+  }
+  .slider_bx .slick-next {
+    right: 20px;
+    top: auto;
+  }
+  .slider_bx .slick-dots {
+    position: absolute;
+  }
+}
