@@ -164,6 +164,7 @@ a {
   max-width: 280px;
   width: 100%;
   position: relative;
+  justify-content: center;
   button{
     width: 100%;
     height: 100%;
@@ -314,6 +315,9 @@ button.btn_bg, a.btn_bg{
 }
 .logo_mobo{
   display: none;
+}
+.centered-btn {
+  text-align: center;
 }
 .sec_one_bg_box{
   background: url(../images/sec_one_bg.png) no-repeat right 0;
@@ -699,6 +703,7 @@ button.see_all_btn_ic, a.see_all_btn_ic{
   justify-content: center;
   flex-direction: column;
   position: relative;
+  
   &::before {
     content: "";
     position: absolute;

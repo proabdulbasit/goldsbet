@@ -15,12 +15,17 @@ export default function Secone() {
                 <img src="img/logo.svg" alt="" className='logo' />
               </a>
               <Box className='head_btn_box'>
-                <a href="#">
-                  <img src="img/logo_mobo.svg" alt="" className='logo_mobo' />
-                </a>
-                <Button>Sign In <img src="img/sign_btn_ic.svg" alt="" className='sign_btn_ic' /></Button>
-                <Button>Sign Up<img src="img/sign_btn_ic_02.svg" alt="" className='sign_btn_ic' /></Button>
-              </Box>
+    <a href="https://goldsbet.com/?id=86144446&currency=INR&type=2" className="btn-link">
+        <img src="img/logo_mobo.svg" alt="" className='logo_mobo' />
+    </a>
+    <a href="https://goldsbet.com/?id=86144446&currency=INR&type=2" className="btn-link">
+        <Button className="centered-btn">Sign In <img src="img/sign_btn_ic.svg" alt="" className='sign_btn_ic' /></Button>
+    </a>
+    <a href="https://goldsbet.com/?id=86144446&currency=INR&type=2" className="btn-link">
+        <Button className="centered-btn">Sign Up<img src="img/sign_btn_ic_02.svg" alt="" className='sign_btn_ic' /></Button>
+    </a>
+</Box>
+
             </Box>
             <Box className='sec_01_p_btn_img'>
               <Box className='sec_bg_box'>
@@ -172,7 +177,7 @@ export default function Secone() {
           <Container maxW='1750px'>
             <Box className='accept_payments_ph'>
               <Heading as={'h2'}>We accept payments</Heading>
-              <Text>Neque, pulvinar vestibulum non aliquam.</Text>
+              {/* <Text>Neque, pulvinar vestibulum non aliquam.</Text> */}
             </Box>
             <SimpleGrid columns={12} columnGap={2} rowGap={2}>
               <GridItem colSpan={[6, 6, 6, 3]}>
